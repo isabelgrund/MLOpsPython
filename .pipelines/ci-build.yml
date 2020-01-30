@@ -69,7 +69,7 @@ stages:
         PipelineParameters: '"model_name": "sklearn_regression_model.pkl"'
   - job: "Training_Run_Report"
     dependsOn: "Run_ML_Pipeline"
-    displayName: "Determine if evaluation succeeded and new model is registered"
+    displayName: "Determine if evaluation succeeded and new model is being registered"
     pool:
       vmImage: 'ubuntu-latest'
     container: mcr.microsoft.com/mlops/python:latest
